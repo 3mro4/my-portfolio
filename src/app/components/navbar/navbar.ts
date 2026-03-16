@@ -11,4 +11,11 @@ import { LanguageService } from '../../services/language';
 })
 export class Navbar {
   constructor(public lang: LanguageService) {}
+
+  closeNavbar() {
+  const navbarCollapse = document.getElementById('navbarNav');
+  if (navbarCollapse?.classList.contains('show')) {
+    navbarCollapse.classList.remove('show');
+  }
+ }
 }
