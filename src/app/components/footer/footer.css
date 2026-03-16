@@ -1,0 +1,25 @@
+#footer {
+  background-color: #060c18;
+  color: #ffffff;
+  padding: 40px 0 20px;
+  border-top: 1px solid rgba(78, 154, 241, 0.2);
+}
+
+
+
+/* Bottom Copyright */
+
+
+.footer-bottom {
+  color: #a0aec0;
+  font-size: 0.85rem;
+  margin: 0;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-socials {
+    justify-content: center;
+  }
+}

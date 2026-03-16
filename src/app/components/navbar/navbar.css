@@ -1,0 +1,39 @@
+#navbar {
+  background-color: #0a0f1e;
+  padding: 15px 0;
+  transition: 0.3s ;
+}
+
+.navbar-brand {
+  color: #4e9af1 !important;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  color: #cdd6f4 !important;
+  margin: 0 10px;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #4e9af1 !important;
+}
+
+/* Underline animation on hover */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  background-color: #4e9af1;
+  transition: width 0.3s ease;
+    width: 0;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
