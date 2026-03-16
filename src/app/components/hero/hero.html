@@ -4,28 +4,24 @@
       <div class="col-lg-8">
 
         <!-- Greeting -->
-        <p class="greeting">Hello, I'm</p>
+        <p class="greeting">{{ lang.t().hero.greeting }}</p>
 
         <!-- Name -->
-        <h1 class="hero-name">Omar Almuhaidib</h1>
+        <h1 class="hero-name">{{ lang.t().hero.name }}</h1>
 
-        <!-- Title with typing effect -->
-        <h2 class="hero-title">Full-Stack Developer</h2>
+        <!-- Title -->
+        <h2 class="hero-title">{{ lang.t().hero.title }}</h2>
 
         <!-- Description -->
-        <p class="hero-desc">
-          Computer Science student passionate about building beautiful,
-          user-friendly web applications. Experienced in both frontend and backend
-          development Based in Riyadh, Saudi Arabia.
-        </p>
+        <p class="hero-desc">{{ lang.t().hero.desc }}</p>
 
         <!-- Buttons -->
         <div class="hero-buttons">
           <a href="#contact" class="btn btn-primary-custom">
-            <i class="bi bi-envelope-fill me-2"></i>Contact Me
+            <i class="bi bi-envelope-fill me-2"></i>{{ lang.t().hero.contactBtn }}
           </a>
           <a href="#experience" class="btn btn-outline-custom ms-3">
-            <i class="bi bi-briefcase-fill me-2"></i>My Experience
+            <i class="bi bi-briefcase-fill me-2"></i>{{ lang.t().hero.experienceBtn }}
           </a>
         </div>
 

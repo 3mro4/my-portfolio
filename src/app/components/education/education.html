@@ -4,7 +4,7 @@
     <!-- Section Title -->
     <div class="row">
       <div class="col-12 text-center mb-5">
-        <h2 class="section-title">Education</h2>
+        <h2 class="section-title">{{ lang.t().education.title }}</h2>
         <div class="title-underline"></div>
       </div>
     </div>
@@ -20,21 +20,17 @@
           <div class="education-content">
             <div class="education-header">
               <div>
-                <h4 class="degree-title">Bachelor's Degree in Computer Science</h4>
+                <h4 class="degree-title">{{ lang.t().education.degree }}</h4>
                 <h5 class="university-name">
                   <i class="bi bi-building me-2"></i>
-                    Imam Muhammad ibn Saud Islamic University
+                  {{ lang.t().education.university }}
                 </h5>
               </div>
               <span class="education-date">
-                <i class="bi bi-calendar3 me-1"></i>2022 — 2026
+                <i class="bi bi-calendar3 me-1"></i>{{ lang.t().education.date }}
               </span>
             </div>
-            <p class="education-desc">
-              Studying core Computer Science concepts including algorithms,
-              data structures, software engineering, and artificial intelligence.
-              Actively participating in extracurricular activities and clubs.
-            </p>
+            <p class="education-desc">{{ lang.t().education.desc }}</p>
             <div class="tags">
               <span class="tag">Computer Science</span>
               <span class="tag">Algorithms</span>

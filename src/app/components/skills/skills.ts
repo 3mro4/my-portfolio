@@ -1,9 +1,14 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { LanguageService } from '../../services/language';
 
 @Component({
   selector: 'app-skills',
-  imports: [],
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './skills.html',
   styleUrl: './skills.css',
 })
-export class Skills {}
+export class Skills {
+  constructor(public lang: LanguageService) {}
+}

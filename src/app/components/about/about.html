@@ -4,7 +4,7 @@
     <!-- Section Title -->
     <div class="row">
       <div class="col-12 text-center mb-5">
-        <h2 class="section-title">About Me</h2>
+        <h2 class="section-title">{{ lang.t().about.title }}</h2>
         <div class="title-underline"></div>
       </div>
     </div>
@@ -12,63 +12,53 @@
     <!-- Content -->
     <div class="row align-items-center">
 
-      <!-- Left: Avatar / Initial -->
+      <!-- Left: Avatar -->
       <div class="col-lg-4 text-center mb-4 mb-lg-0">
         <div class="avatar-circle">
-          <span><img src="assets/logo1.png" alt="Profile Image"
-       style="width: 160px; height: 160px; border-radius: 50%;" /> </span>
+          <span>
+            <img src="assets/logo1.png" alt="Profile Image"
+                 style="width: 160px; height: 160px; border-radius: 50%;" />
+          </span>
         </div>
         <!-- Info badges -->
         <div class="info-badges mt-4">
           <span class="badge-item">
-            <i class="bi bi-mortarboard-fill"></i> CS Student
+            <i class="bi bi-mortarboard-fill"></i> {{ lang.t().about.badge2 }}
           </span>
           <span class="badge-item">
-            <i class="bi bi-code-slash"></i> Full-Stack Developer
+            <i class="bi bi-code-slash"></i> {{ lang.t().about.badge3 }}
           </span>
           <span class="badge-item">
-            <i class="bi bi-geo-alt-fill"></i> Riyadh, Saudi Arabia
+            <i class="bi bi-geo-alt-fill"></i> {{ lang.t().about.badge1 }}
           </span>
         </div>
       </div>
 
       <!-- Right: Text -->
       <div class="col-lg-8">
-        <h3 class="about-heading">Who am I?</h3>
-        <p class="about-text">
-          I'm a Computer Science student at Imam Muhammad ibn Saud University
-          with a strong background in programming and real experience in
-          full-stack development using Node.js, Express, and MongoDB.
-        </p>
-        <p class="about-text">
-          I enjoy designing intuitive, user-friendly interfaces with Figma
-          and I'm genuinely passionate about technology, especially artificial
-          intelligence and data analysis.
-        </p>
-        <p class="about-text">
-          I'm always eager to learn and challenge myself. I'm looking for a
-          cooperative training opportunity where I can grow, gain hands-on
-          experience, and make a meaningful contribution to real projects.
-        </p>
+        <h3 class="about-heading">{{ lang.t().about.subtitle }}</h3>
+        <p class="about-text">{{ lang.t().about.p1 }}</p>
+        <p class="about-text">{{ lang.t().about.p2 }}</p>
+        <p class="about-text">{{ lang.t().about.p3 }}</p>
 
         <!-- Quick Stats -->
         <div class="row mt-4">
           <div class="col-4 text-center">
             <div class="stat-box">
               <h4>2+</h4>
-              <p>Internships</p>
+              <p>{{ lang.t().about.stat1 }}</p>
             </div>
           </div>
           <div class="col-4 text-center">
             <div class="stat-box">
               <h4>3+</h4>
-              <p>Years Coding</p>
+              <p>{{ lang.t().about.stat2 }}</p>
             </div>
           </div>
           <div class="col-4 text-center">
             <div class="stat-box">
-              <h4>5+</h4>
-              <p>Technologies</p>
+              <h4>7+</h4>
+              <p>{{ lang.t().about.stat3 }}</p>
             </div>
           </div>
         </div>

@@ -4,11 +4,9 @@
     <!-- Section Title -->
     <div class="row">
       <div class="col-12 text-center mb-5">
-        <h2 class="section-title">Get In Touch</h2>
+        <h2 class="section-title">{{ lang.t().contact.title }}</h2>
         <div class="title-underline"></div>
-        <p class="section-subtitle">
-          Feel free to reach out — I'm always open to new opportunities!
-        </p>
+        <p class="section-subtitle">{{ lang.t().contact.subtitle }}</p>
       </div>
     </div>
 
@@ -25,24 +23,11 @@
                 <i class="bi bi-envelope-fill"></i>
               </div>
               <div>
-                <h5 class="contact-label">Email</h5>
+                <h5 class="contact-label">{{ lang.t().contact.email }}</h5>
                 <p class="contact-value">oalmohaideb@gmail.com</p>
               </div>
             </a>
           </div>
-
-          <!-- Phone -->
-          <!-- <div class="col-md-6">
-            <a href="tel:+966547818727" class="contact-card">
-              <div class="contact-icon">
-                <i class="bi bi-telephone-fill"></i>
-              </div>
-              <div>
-                <h5 class="contact-label">Phone</h5>
-                <p class="contact-value">+966 54 781 8727</p>
-              </div>
-            </a>
-          </div> -->
 
           <!-- LinkedIn -->
           <div class="col-md-6">
@@ -58,28 +43,26 @@
             </a>
           </div>
 
-        
-
         </div>
 
-          <!-- GitHub -->
-          <div class="  col-md-12 mt-4">
-            <a href="https://github.com/3mro4"
-              target="_blank" class="contact-card">
-              <div class="contact-icon github">
-                <i class="bi bi-github"></i>
-              </div>
-              <div>
-                <h5 class="contact-label">GitHub</h5>
-                <p class="contact-value">github.com/3mro4</p>
-              </div>
-            </a>
-          </div>
+        <!-- GitHub -->
+        <div class="col-md-12 mt-4">
+          <a href="https://github.com/3mro4"
+            target="_blank" class="contact-card">
+            <div class="contact-icon github">
+              <i class="bi bi-github"></i>
+            </div>
+            <div>
+              <h5 class="contact-label">GitHub</h5>
+              <p class="contact-value">github.com/3mro4</p>
+            </div>
+          </a>
+        </div>
 
         <!-- Location -->
         <div class="location-card mt-4">
           <i class="bi bi-geo-alt-fill me-2"></i>
-          Based in <strong>Riyadh, Saudi Arabia</strong> 
+          {{ lang.t().contact.location }} <strong>{{ lang.t().contact.locationCity }}</strong>
         </div>
 
       </div>

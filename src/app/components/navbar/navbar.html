@@ -1,11 +1,12 @@
-<nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+<nav class="navbar navbar-expand-lg fixed-top" id="navbar"
+  [dir]="lang.isArabic() ? 'rtl' : 'ltr'">
   <div class="container">
 
-    <!-- Name -->
-<a class="navbar-brand fw-bold" href="#">
-  <img src="assets/logo1.png" alt="Profile Image"
-       style="width: 40px; height: 40px; " />
-</a>
+    <!-- Logo -->
+    <a class="navbar-brand fw-bold" href="#">
+      <img src="assets/logo1.png" alt="Profile Image"
+           style="width: 40px; height: 40px;" />
+    </a>
 
     <!-- Mobile toggle button (hamburger) -->
     <button class="navbar-toggler" type="button"
@@ -16,12 +17,19 @@
 
     <!-- Nav links -->
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      <ul class="navbar-nav ms-auto align-items-center">
+        <li class="nav-item"><a class="nav-link" href="#about">{{ lang.t().nav.about }}</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">{{ lang.t().nav.experience }}</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">{{ lang.t().nav.education }}</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">{{ lang.t().nav.skills }}</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">{{ lang.t().nav.contact }}</a></li>
+
+        <!-- Language Toggle Button -->
+        <li class="nav-item ms-3">
+          <button class="lang-btn" (click)="lang.toggleLanguage()">
+            {{ lang.isArabic() ? 'EN' : 'AR' }}
+          </button>
+        </li>
       </ul>
     </div>
 
