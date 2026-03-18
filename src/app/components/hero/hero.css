@@ -53,6 +53,13 @@
   color: #4e9af1;
 }
 
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+}
+
 .btn-outline-custom {
   background-color: transparent;
   color: #4e9af1;
@@ -84,6 +91,13 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-  .hero-name { font-size: 2.5rem; }
-  .hero-title { font-size: 1.4rem; }
+  .hero-name { font-size: 2rem; }
+  .hero-title { font-size: 1.2rem; }
+  #hero { padding-top: 100px; }
+
+  .btn-primary-custom,
+  .btn-outline-custom {
+    padding: 8px 18px;
+    font-size: 0.85rem;
+  }
 }
