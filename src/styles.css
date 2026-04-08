@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap');
+
+[dir="rtl"] * {
+  font-family: 'Readex Pro', sans-serif !important;
+}
+
+/* Terminal always uses monospace — never change it */
+[dir="rtl"] .terminal-wrap,
+[dir="rtl"] .terminal-wrap * {
+  font-family: 'Courier New', monospace !important;
+}
+
+/* Scroll reveal animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  background-color: blue;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+body {
+  background-color: #0d1b3e !important;
+}
