@@ -35,3 +35,70 @@ jobs:
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+
+    
+##########################################################################
+# # Test and Scan and Build and Deploy 
+
+# # test : integration test and unit test
+# # scan : scan docker image for vulnerabilities using trivy
+# # build : build docker image and push to docker hub
+# # deploy: deploy docker image using google cloud 
+
+##########################################################################
+# on:
+#   push:
+#     branches:
+#       - main
+
+# jobs:
+#   build:
+#     name: Build 
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v4
+# # how to build and push dockerfile 
+
+#       - name: build docker image
+#         run: |
+#           docker build  --no-cache -t my-portfolio:latest .
+        
+#       - name: push docker image to docker hub
+#         run: |
+#           echo ${{ secrets.DOCKER_PASSWORD }} | docker login -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
+#           docker tag my-portfolio:latest ${{ secrets.DOCKER_USERNAME }}/my-portfolio:latest
+#           docker push ${{ secrets.DOCKER_USERNAME }}/my-portfolio:latest
+      
+     
+      
+# # modify stages to build test depoly and build and push docker image to docker hub
+    
+ 
+
+#   deploy:
+#     name: Deploy
+#     needs: build
+#     runs-on: ubuntu-latest
+
+#     steps:
+
+#       - name: docker pull image from docker hub
+#         run: |
+#           echo ${{ secrets.DOCKER_PASSWORD }} | docker login -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
+#           docker pull ${{ secrets.DOCKER_USERNAME }}/my-portfolio:latest 
+# # modify stages to build test depoly and build and push docker image to docker hub
+
+#       - name: deploy to netlify and login to netlify and place new image in netlify
+
+#       # - name: Deploy to Netlify 
+#       #   uses: nwtgck/actions-netlify@v3
+#       #   with:
+#       #     publish-dir: './dist/my-portfolio/browser'
+#       #     production-branch: main
+#       #     github-token: ${{ secrets.GITHUB_TOKEN }}
+#       #     deploy-message: "Deploy from GitHub Actions"
+#       #   env:
+#       #     NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+#       #     NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
