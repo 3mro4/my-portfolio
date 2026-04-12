@@ -13,7 +13,7 @@ export const translations = {
   greeting: "Hello, I'm",
   name: 'Omar Almuhaidib',
   title: 'Full Stack Developer',
-  desc: 'Fresh Computer Science graduate and Full Stack Developer, currently working as a Software Engineer at TCC. Experienced in building and deploying web applications using Angular and Spring Boot.',
+  desc: 'Fresh Computer Science graduate and Full Stack Developer, currently working as a Software Engineer at TCC. Experienced in building and deploying web applications using Angular and Spring Boot."Demo"',
   contactBtn: 'Contact Me',
   experienceBtn: 'My Experience'
 },
