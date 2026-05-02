@@ -6,6 +6,7 @@ export const translations = {
       skills: 'Skills',
       experience: 'Experience',
       education: 'Education',
+      projects: 'Projects',
       contact: 'Contact'
     },
     // Hero
@@ -94,6 +95,17 @@ about: {
       locationCity: 'Riyadh, Saudi Arabia',
     },
 
+
+    projects: {
+      title: 'Projects',
+      coopBadge: 'Co-op @ TCC',
+      wipBadge: 'In Progress',
+      p2Title: 'Task Management Application',
+      p2Desc: 'Full-stack task management system built during co-op training at TCC. Features complete CRUD operations, RESTful API integration, and a clean Angular UI with Spring Boot backend.',
+      p3Title: 'Kitchen Portal',
+      p3Desc: 'Enterprise kitchen management portal developed at TCC. Includes full UI/UX design in Figma, Angular frontend, Spring Boot backend, Keycloak SSO authentication, and Docker containerization.',
+    },
+
     footer: {
       title: 'Full Stack Developer',
       copyright: '© 2026 Omar Almuhaidib. Built with Angular & Bootstrap'
@@ -107,6 +119,7 @@ about: {
       skills: 'المهارات',
       experience: 'الخبرات',
       education: 'التعليم',
+      projects: 'المشاريع',
       contact: 'تواصل'
     },
     // Hero 
@@ -193,6 +206,17 @@ about: {
       phone: 'الهاتف',
       location: 'مقيم في',
       locationCity: 'الرياض، المملكة العربية السعودية',
+    },
+
+
+    projects: {
+      title: 'المشاريع',
+      coopBadge: 'تدريب تعاوني @ TCC',
+      wipBadge: 'قيد التطوير',
+      p2Title: 'تطبيق إدارة المهام',
+      p2Desc: 'نظام إدارة مهام متكامل بُني خلال التدريب التعاوني في TCC، يتضمن عمليات CRUD كاملة وتكاملاً مع RESTful API وواجهة Angular نظيفة مع خادم Spring Boot.',
+      p3Title: 'بوابة المطبخ',
+      p3Desc: 'بوابة إدارة مطبخ للمؤسسات طُورت في TCC، تشمل تصميم UI/UX كامل عبر Figma، وواجهة Angular، وخادم Spring Boot، ومصادقة Keycloak SSO، وحاويات Docker.',
     },
 
     footer: {

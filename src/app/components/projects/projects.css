@@ -1,0 +1,202 @@
+#projects {
+  scroll-margin-top: 70px;
+  background-color: #0d1b3e;
+  color: #ffffff;
+}
+
+.section-title {
+  color: #ffffff;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.title-underline {
+  width: 60px;
+  height: 4px;
+  background-color: #4e9af1;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* ── Card: horizontal layout ── */
+.project-card {
+  background-color: rgba(78, 154, 241, 0.05);
+  border: 1px solid rgba(78, 154, 241, 0.2);
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  min-height: 320px;
+}
+
+
+
+/* ── Left: preview ── */
+.preview-area {
+  width: 55%;
+  flex-shrink: 0;
+  background-color: #111827;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.browser-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 14px;
+  background-color: #111827;
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+.dot { width: 11px; height: 11px; border-radius: 50%; }
+.dot.red    { background-color: #ff5f57; }
+.dot.yellow { background-color: #febc2e; }
+.dot.green  { background-color: #28c840; }
+
+.browser-url {
+  margin-left: 10px;
+  background-color: #1f2937;
+  color: #6b7280;
+  font-size: 0.72rem;
+  padding: 3px 12px;
+  border-radius: 20px;
+  font-family: monospace;
+}
+
+.desktop-screen {
+  flex: 1;
+  width: 100%;
+  object-fit: cover;
+  object-position: top left;
+  display: block;
+}
+
+/* ── Phone overlay ── */
+.phone-overlay {
+  position: absolute;
+  bottom: 0;
+  right: 12px;
+  width: 120px;
+  height: 280px;
+  background-color: #1a2035;
+  border-radius: 14px 14px 0 0;
+  border: 2px solid rgba(78, 154, 241, 0.5);
+  border-bottom: none;
+  overflow: hidden;
+  box-shadow: -6px 0 24px rgba(0, 0, 0, 0.6);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+}
+
+.phone-notch {
+  width: 32px;
+  height: 5px;
+  background-color: #374151;
+  border-radius: 3px;
+  margin: 8px auto 5px;
+  flex-shrink: 0;
+}
+
+.phone-screen {
+  flex: 1;
+  overflow: hidden;
+}
+
+.phone-screen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+
+/* ── Right: info ── */
+.project-info {
+  flex: 1;
+  padding: 28px 28px 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  border-left: 1px solid rgba(78, 154, 241, 0.1);
+}
+
+.project-meta {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.project-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.coop-badge {
+  background-color: rgba(78, 154, 241, 0.1);
+  color: #4e9af1;
+  border: 1px solid rgba(78, 154, 241, 0.3);
+}
+
+.wip-badge {
+  background-color: rgba(251, 191, 36, 0.1);
+  color: #fbbf24;
+  border: 1px solid rgba(251, 191, 36, 0.3);
+}
+
+.project-title {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.project-desc {
+  color: #a0aec0;
+  font-size: 0.9rem;
+  line-height: 1.75;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.tag {
+  background-color: rgba(78, 154, 241, 0.1);
+  color: #4e9af1;
+  border: 1px solid rgba(78, 154, 241, 0.3);
+  padding: 4px 12px;
+  border-radius: 50px;
+  font-size: 0.78rem;
+}
+
+/* ── Responsive: stack on mobile ── */
+@media (max-width: 768px) {
+  .project-card {
+    flex-direction: column;
+  }
+
+  .preview-area {
+    width: 100%;
+    height: 280px;
+  }
+
+  .desktop-screen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

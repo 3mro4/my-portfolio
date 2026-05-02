@@ -1,0 +1,83 @@
+<section id="projects" class="py-5 reveal">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-12 text-center mb-5">
+        <h2 class="section-title">{{ lang.t().projects.title }}</h2>
+        <div class="title-underline"></div>
+      </div>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Task Management -->
+      <div class="col-12">
+        <div class="project-card">
+          <div class="preview-area">
+            <div class="browser-bar">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="browser-url">localhost:4200/dashboard</span>
+            </div>
+            <img class="desktop-screen" src="assets/taskmanager.png" alt="Task Management App" />
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <div class="project-badge coop-badge">
+                <i class="bi bi-building me-1"></i>{{ lang.t().projects.coopBadge }}
+              </div>
+            </div>
+            <h4 class="project-title">{{ lang.t().projects.p2Title }}</h4>
+            <p class="project-desc">{{ lang.t().projects.p2Desc }}</p>
+            <div class="tags">
+              <span class="tag">Angular</span>
+              <span class="tag">Spring Boot</span>
+              <span class="tag">REST API</span>
+              <span class="tag">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kitchen Portal -->
+      <div class="col-12">
+        <div class="project-card">
+          <div class="preview-area">
+            <div class="browser-bar">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="browser-url">localhost:4200/menu</span>
+            </div>
+            <img class="desktop-screen" src="assets/kitchen-desktop.png" alt="Kitchen Portal Desktop" />
+            <div class="phone-overlay">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <img src="assets/kitchen-mobile.png" alt="Kitchen Portal Mobile" />
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <div class="project-badge coop-badge">
+                <i class="bi bi-building me-1"></i>{{ lang.t().projects.coopBadge }}
+              </div>
+             
+            </div>
+            <h4 class="project-title">{{ lang.t().projects.p3Title }}</h4>
+            <p class="project-desc">{{ lang.t().projects.p3Desc }}</p>
+            <div class="tags">
+              <span class="tag">Angular</span>
+              <span class="tag">Spring Boot</span>
+              <span class="tag">Keycloak</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Figma</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
